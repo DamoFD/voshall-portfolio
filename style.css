@@ -326,9 +326,7 @@ input, input:focus {
   margin-left: 16px;
   display: flex;
   flex-direction: column;
-}
-#method .method-head-container {
-  padding-top: 84px;
+  padding: 84px 0px;
 }
 #method .method-head {
   margin-top: 10px;
@@ -338,6 +336,28 @@ input, input:focus {
 }
 #method .btn-container {
   margin-top: 30px;
+}
+#method .cards {
+  margin-top: 30px;
+}
+#method .card-container {
+  width: 100%;
+  background: linear-gradient(360deg, #243833 0%, #0C0C0C 38.69%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+#method .card-icon {
+  width: 75px;
+  height: 75px;
+}
+#method .card-container p {
+  margin: 0px 32px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
