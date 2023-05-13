@@ -1,6 +1,10 @@
+/* Method Section */
+
 #method {
 
     width: 100%;
+
+    /* Mobile-First */
 
     .method-container {
         width: calc(100% - 32px);

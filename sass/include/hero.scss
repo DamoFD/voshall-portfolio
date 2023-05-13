@@ -4,11 +4,13 @@
 
     margin-top: 84px;
     position: relative;
-    background-image: url(../../assets/images/head.png);
+    background-image: url(./assets/images/head.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     z-index: -2;
+
+    /* Mobile-First */
 
     .hero-content-container {
         display: flex;
