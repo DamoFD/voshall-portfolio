@@ -39,6 +39,17 @@ input, input:focus {
   outline: none;
 }
 
+.btn {
+  padding: 12px 34px;
+  border-radius: 8px;
+}
+
+.line-break {
+  width: 123px;
+  height: 4px;
+  margin-top: 20px;
+}
+
 /* Typography Classes */
 /* Fonts */
 .font-sans {
@@ -56,15 +67,15 @@ input, input:focus {
 /* Font Sizes */
 /* Mobile First */
 .font-size-header {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .font-size-med {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .font-size-small {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -91,12 +102,32 @@ input, input:focus {
   color: #FFFFFF;
 }
 
+.color-text {
+  color: #AAAAAA;
+}
+
 .color-black-1 {
   color: #151515;
 }
 
 .color-bg-1 {
   background-color: #151515;
+}
+
+.color-black-2 {
+  color: #0C0C0C;
+}
+
+.color-bg-2 {
+  background-color: #0C0C0C;
+}
+
+.color-black-3 {
+  color: #000000;
+}
+
+.color-bg-3 {
+  background-color: #000000;
 }
 
 .header-img {
@@ -231,6 +262,26 @@ input, input:focus {
 #hero {
   margin-top: 84px;
   position: relative;
+  background-image: url(../../assets/images/head.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+}
+#hero .hero-content-container {
+  display: flex;
+  width: calc(100% - 32px);
+  height: calc(100vh - 84px);
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+}
+#hero .hero-head {
+  margin-top: 10px;
+  width: 350px;
+}
+#hero .hero-text {
+  margin-top: 20px;
 }
 #hero .hero-overlay {
   width: 100%;
@@ -249,6 +300,44 @@ input, input:focus {
   top: 0;
   left: 0;
   z-index: -2;
+}
+#hero .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#hero .social-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#hero .social-icon {
+  width: 55px;
+  height: 55px;
+  margin: 40px 20px;
+}
+
+#method {
+  width: 100%;
+}
+#method .method-container {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#method .method-head-container {
+  padding-top: 84px;
+}
+#method .method-head {
+  margin-top: 10px;
+}
+#method .method-text {
+  margin-top: 20px;
+}
+#method .btn-container {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
