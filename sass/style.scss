@@ -1,0 +1,24 @@
+@font-face {
+    font-family: poppins-medium;
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: worksans-bold;
+    src: url(./assets/fonts/WorkSans-Bold.ttf);
+    font-display: swap;
+}
+
+@import'./include/variables.scss';
+@import'./include/global.scss';
+@import'./include/typography.scss';
+@import'./include/color.scss';
+@import'./include/header.scss';
+@import'./include/hero.scss';

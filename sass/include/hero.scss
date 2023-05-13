@@ -1,0 +1,30 @@
+/* Hero Section */
+
+#hero {
+
+    margin-top: 84px;
+    position: relative;
+
+    .hero-overlay {
+        width: 100%;
+        height: calc(100vh - 84px);
+        background: linear-gradient(
+            90deg, rgba(12, 12, 12, 0.8) 0.37%,
+            rgba(38, 72, 63, 0.8) 109.27%
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: calc(100vh - 84px);
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+}
