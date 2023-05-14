@@ -159,7 +159,7 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 50%;
 }
 
 .navbar .nav-right {
@@ -322,6 +322,37 @@ a {
   width: 55px;
   height: 55px;
   margin: 40px 20px;
+}
+@media only screen and (min-width: 900px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0C0C0C;
+    height: calc(100vh - 84px);
+    margin-top: 84px;
+  }
+  #hero .hero-content-container {
+    order: 2;
+  }
+  #hero .hero-container {
+    order: 1;
+    width: 100%;
+    height: calc(100vh - 84px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .hero-overlay {
+    display: none;
+  }
+  #hero .hero-img {
+    z-index: 2;
+    position: initial;
+    background-attachment: initial;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
 }
 
 /* Method Section */
