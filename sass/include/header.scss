@@ -10,20 +10,19 @@
     justify-content: space-between;
     align-items: center;
     height: 84px;
-    overflow: hidden;
-    position: absolute;
+    position: fixed;
     background-color: $color-bg-1;
-	top: 0;
-	left: 0;
+	  top: 0;
+	  left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
   }
   
   .navbar ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-	width: 80%;
+	  width: 80%;
   }
 
   .navbar .nav-right {
@@ -106,7 +105,7 @@
       position: fixed;
       justify-content: start;
       top: 0;
-      background-color: rgba(54, 54, 54,0.9);
+      background-color: rgb(21, 21, 21, 0.9);
       width: 100%;
       height: 100vh;
       transform: translate(-100%);

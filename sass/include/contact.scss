@@ -1,0 +1,79 @@
+/* Contact Section */
+
+#contact {
+
+    /* Mobile-First */
+
+    padding-top: 85px;
+
+    .contact-container {
+        width: calc(100% - 32px);
+        margin-left: 16px; 
+    }
+
+    .contact-text {
+        margin-top: 20px;
+    }
+
+    .icon-container {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .icon-text {
+        margin-left: 20px;
+    }
+
+    .icon-text h3 {
+        font-size: 25px;
+    }
+
+    .icon-text p {
+        font-size: 20px;
+    }
+
+    .social-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .social-container img {
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        border: solid 2px $color-primary;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: $color-bg-1;
+    }
+
+    input {
+        height: 65px;
+    }
+
+    textarea {
+        height: 301px;
+    }
+
+    button {
+        height: 65px;
+        border-radius: 8px;
+    }
+
+    .created-by {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
