@@ -23,6 +23,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button, button:focus {
@@ -44,6 +49,13 @@ input, input:focus {
   padding: 12px 34px;
   border-radius: 8px;
   text-decoration: none;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #466d62;
+  transform: translateY(-5px);
 }
 
 .line-break {
@@ -56,6 +68,11 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 900px) {
+  .line-break {
+    width: 224px;
+  }
+}
 /* Typography Classes */
 /* Fonts */
 .font-sans {
@@ -150,7 +167,7 @@ a {
   position: fixed;
   background-color: #151515;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   z-index: 5;
 }
@@ -293,7 +310,7 @@ a {
 }
 #hero .hero-head {
   margin-top: 10px;
-  width: 350px;
+  width: 320px;
 }
 #hero .hero-text {
   margin-top: 20px;
@@ -322,6 +339,11 @@ a {
   width: 55px;
   height: 55px;
   margin: 40px 20px;
+  transition: transform 0.5s ease;
+}
+#hero .social-icon:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 @media only screen and (min-width: 900px) {
   #hero {
@@ -333,6 +355,7 @@ a {
   }
   #hero .hero-content-container {
     order: 2;
+    width: 550px;
   }
   #hero .hero-container {
     order: 1;
@@ -352,6 +375,15 @@ a {
     width: 80%;
     height: 80%;
     margin: auto;
+  }
+  #hero .hero-head {
+    width: 100%;
+  }
+  #hero .btn-container {
+    width: 525px;
+  }
+  #hero .social-container {
+    width: 525px;
   }
 }
 
@@ -398,6 +430,43 @@ a {
   margin: 0px 32px;
   text-align: center;
 }
+@media only screen and (min-width: 900px) {
+  #method .method-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 300px);
+    margin-left: 150px;
+  }
+  #method .method-head-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #method .method-text {
+    padding-right: 150px;
+  }
+  #method .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 40px;
+  }
+  #method .cards > div:nth-child(2n) {
+    margin-top: 10%;
+  }
+  #method .card-container {
+    margin-top: 0px;
+    transition: transform 0.5s ease;
+  }
+  #method .card-container:hover {
+    transform: translateY(-5px);
+  }
+  #method .card-container .font-size-header {
+    font-size: 30px;
+  }
+  #method .card-container .font-size-small {
+    font-size: 25px;
+  }
+}
 
 /* Skills Section */
 #skills {
@@ -433,6 +502,19 @@ a {
 }
 #skills .grid-item-text {
   margin-top: 16px;
+}
+@media only screen and (min-width: 900px) {
+  #skills {
+    background-position: center center;
+  }
+  #skills .skills-container {
+    padding: 150px 0px;
+  }
+  #skills .grid {
+    grid-template-columns: repeat(5, 1fr);
+    width: calc(100% - 300px);
+    margin-left: 150px;
+  }
 }
 
 /* About Section */
@@ -619,17 +701,6 @@ a {
 
 .slide-up.offset-900 {
   transition-delay: 900ms;
-}
-
-.slide-left {
-  transform: translateX(20px);
-  opacity: 0;
-  transition: transform 2s, opacity 2s;
-}
-
-.slide-left.show {
-  transform: translateX(0);
-  opacity: 1;
 }
 
 .slide-right {

@@ -43,4 +43,19 @@
     .grid-item-text {
         margin-top: 16px;
     }
+
+    @media only screen and (min-width: 900px) {
+
+        background-position: center center;
+
+        .skills-container {
+            padding: 150px 0px;
+        }
+
+        .grid {
+            grid-template-columns: repeat(5, 1fr);
+            width: calc(100% - 300px);
+            margin-left: 150px;
+        }
+    }
 }

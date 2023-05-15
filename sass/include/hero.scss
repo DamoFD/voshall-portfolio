@@ -33,7 +33,7 @@
 
     .hero-head {
         margin-top: 10px;
-        width: 350px;
+        width: 320px;
     }
 
     .hero-text {
@@ -70,6 +70,12 @@
         width: 55px;
         height: 55px;
         margin: 40px 20px;
+        transition: transform 0.5s ease;
+    }
+
+    .social-icon:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
     }
 
     @media only screen and (min-width: 900px) {
@@ -82,6 +88,7 @@
 
     .hero-content-container {
         order: 2;
+        width: 550px;
     }
 
     .hero-container {
@@ -105,6 +112,19 @@
         height: 80%;
         margin: auto;
     }
+
+    .hero-head {
+        width: 100%;
+    }
+
+    .btn-container {
+        width: 525px;
+    }
+
+    .social-container{
+        width: 525px;
+    }
+
 }
       
 }
