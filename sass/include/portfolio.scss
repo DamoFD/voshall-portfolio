@@ -87,7 +87,7 @@
 
         .grid {
             grid-template-columns: 1fr 1fr;
-            gap: 50px 50px;
+            gap: 100px 100px;
             width: calc(100% - 430px);
             margin-left: 215px;
             margin-top: 50px;
@@ -96,6 +96,14 @@
         .grid-item {
             height: 375px;
             margin-top: 0px;
+        }
+
+        .grid .grid-item:nth-child(3) img {
+            object-position: -70px center;
+        }
+
+        .grid .grid-item:nth-child(4) img {
+            object-position: center center;
         }
     }
 }
