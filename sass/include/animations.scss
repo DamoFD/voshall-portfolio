@@ -24,13 +24,10 @@
     transition-delay: 900ms;
   }
 
-  .slide-right {
-    transform: translateX(-20px);
-    opacity: 0;
-    transition: transform 2s, opacity 2s;
+  .bounce {
+    transition: transform 0.5s ease;
   }
 
-  .slide-right.show {
-    transform: translateX(0);
-    opacity: 1;
+  .bounce:hover {
+    transform: translateY(-5px);
   }

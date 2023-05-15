@@ -40,6 +40,14 @@
         align-items: center;
     }
 
+    .grid-item img {
+        transition: transform 0.5s ease;
+    }
+
+    .grid-item img:hover {
+        transform: translateY(-5px);
+    }
+
     .grid-item-text {
         margin-top: 16px;
     }

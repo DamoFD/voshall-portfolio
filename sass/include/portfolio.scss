@@ -41,14 +41,27 @@
         margin-top: 50px;
     }
 
-    .grid-item h3 {
-        position: absolute;
+    .grid-content {
+        display: flex;
+        flex-direction: column;
         z-index: 2;
         width: 100%;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-content h3 {
+        z-index: 2;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    button {
+        z-index: 2;
+        padding: 5px 25px;
+        border-radius: 10px;
+        font-size: 16px;
     }
 
     .overlay {
@@ -62,7 +75,7 @@
         border-radius: 10px;
     }
 
-    .grid-item img {
+    .grid-img {
         position: absolute;
         width: 100%;
         height: 100%;
