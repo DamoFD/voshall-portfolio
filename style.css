@@ -23,11 +23,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 button, button:focus {
@@ -522,11 +517,17 @@ a {
   /* Mobile-First */
   padding: 84px 0px;
 }
+#about .grid-img {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  filter: brightness(80%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+}
 #about .about-container {
   width: calc(100% - 32px);
   margin-left: 16px;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 #about .about-text {
   margin-top: 20px;
@@ -544,6 +545,41 @@ a {
   font-size: 30px;
   width: 100px;
   margin-left: 30px;
+}
+@media only screen and (min-width: 900px) {
+  #about {
+    padding: 84px 0px 0px 0px;
+  }
+  #about .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 300px);
+    margin-left: 150px;
+    gap: 0px 50px;
+  }
+  #about .img-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #about .grid-img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  #about .about-container {
+    width: 100%;
+    margin: 50px 0px;
+    justify-content: center;
+    max-width: 700px;
+  }
+  #about .about-text {
+    width: 100%;
+  }
+  #about .icons {
+    display: flex;
+  }
 }
 
 /* Portfolio Section */
