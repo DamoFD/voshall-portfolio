@@ -630,12 +630,6 @@ a {
   margin-bottom: 10px;
   font-size: 25px;
 }
-#portfolio button {
-  z-index: 2;
-  padding: 5px 25px;
-  border-radius: 10px;
-  font-size: 16px;
-}
 #portfolio .overlay {
   position: absolute;
   width: 100%;
@@ -801,7 +795,6 @@ a {
 }
 
 /* Animations */
-/* Animations */
 .slide-up {
   transform: translateY(20px);
   opacity: 0;
@@ -834,10 +827,61 @@ a {
 }
 
 /* Modal styling */
+/* Mobile-First */
 dialog {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: calc(100% - 10px);
+  height: 50%;
+  border-radius: 10px;
+}
+dialog .modal-header {
+  width: calc(100% - 10px);
+  margin-left: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+dialog .modal-header h3 {
+  font-size: 30px;
+}
+dialog button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+dialog .content-container {
+  width: calc(100% - 10px);
+  margin-left: 5px;
+  margin-top: 30px;
+}
+dialog .thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+dialog .grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+dialog .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+dialog .grid-item img {
+  width: 25px;
+  height: 25px;
+}
+dialog .grid-item p {
+  font-size: 16px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

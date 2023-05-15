@@ -1,7 +1,68 @@
 /* Modal styling */
 
+/* Mobile-First */
+
 dialog {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: calc(100% - 10px);
+    height: 50%;
+    border-radius: 10px;
+
+    .modal-header {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    button {
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .content-container {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .grid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
 }

@@ -41,26 +41,6 @@ $(document).ready(function() {
 
   $(window).on('scroll', checkSlide); // Check on scroll
   checkSlide(); // Check on page load
-
-  // Portfolio Modals
-  const numModals = 4;
-  let $open = [], $close = [], $modal = [];
-
-  for (let i = 1; i <= numModals; i++) {
-    $open[i] = $('[data-open-modal-' + i + ']');
-    $close[i] = $('[data-close-modal-' + i + ']');
-    $modal[i] = $('[data-modal-' + i + ']');
-  }
-
-  for (let i = 1; i <= numModals; i++) {
-    $open[i].on("click", function() {
-      $modal[i][0].showModal();
-    });
-
-    $close[i].on("click", function() {
-      $modal[i][0].close();
-  });
-}
 });
 
 
