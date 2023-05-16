@@ -39,6 +39,7 @@
         <div class="hero-container">
           <div class="hero-overlay"></div>
           <div class="hero-img"></div>
+          <div class="hero-backdrop color-bg-2"></div>
         </div>
       </section>
       <!-- !start Hero -->

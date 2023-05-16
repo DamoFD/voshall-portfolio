@@ -289,15 +289,22 @@ a {
 }
 #hero .hero-img {
   position: absolute;
-  background-image: url(./assets/images/head.png);
-  background-position: center center;
+  background-image: url(./assets/images/hero-photo.webp);
+  background-position: -300px center;
   background-size: cover;
-  background-attachment: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -2;
+}
+#hero .hero-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
 #hero .hero-content-container {
   display: flex;
@@ -317,7 +324,7 @@ a {
 #hero .hero-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(12, 12, 12, 0.8) 0.37%, rgba(38, 72, 63, 0.8) 109.27%);
+  background: linear-gradient(90deg, rgba(12, 12, 12, 0.9) 0.37%, rgba(38, 72, 63, 0.9) 109.27%);
   position: absolute;
   top: 0;
   left: 0;
@@ -354,10 +361,10 @@ a {
   #hero .hero-container {
     order: 1;
     width: 100%;
-    height: calc(100vh - 84px);
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
   #hero .hero-overlay {
     display: none;
@@ -365,10 +372,12 @@ a {
   #hero .hero-img {
     z-index: 2;
     position: initial;
-    background-attachment: initial;
-    width: 80%;
-    height: 80%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+  }
+  #hero .hero-backdrop {
+    display: none;
   }
   #hero .hero-head {
     width: 100%;
@@ -882,6 +891,101 @@ dialog .grid-item img {
 dialog .grid-item p {
   font-size: 16px;
   text-align: center;
+}
+
+/* project section */
+/* Mobile-First */
+#project {
+  padding-top: 134px;
+}
+#project .project-container {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+}
+#project .thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+#project .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+#project .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project .grid-item img {
+  width: 25px;
+  height: 25px;
+}
+#project .grid-item p {
+  text-align: center;
+  margin-top: 10px;
+}
+#project .description {
+  margin-top: 30px;
+}
+#project .icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#project .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project .icon img {
+  width: 50px;
+  height: 50px;
+}
+#project .icon p {
+  text-align: center;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 900px) {
+  #project .project-container {
+    width: calc(100% - 300px);
+    margin-left: 150px;
+  }
+  #project .thumbnail {
+    height: 600px;
+  }
+  #project .grid-item {
+    margin-top: 0px;
+  }
+  #project .grid-item img {
+    width: 75px;
+    height: 75px;
+    margin-top: 50px;
+  }
+  #project .grid-item p {
+    font-size: 32px;
+  }
+  #project .text-icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #project .description {
+    width: 50%;
+  }
+  #project .icons {
+    justify-content: space-between;
+  }
+  #project .icon {
+    margin-right: 50px;
+  }
+  #project .icon img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
