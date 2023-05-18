@@ -8,6 +8,9 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- Custom JS File -->
     <script src="index.js"></script>
   </body>

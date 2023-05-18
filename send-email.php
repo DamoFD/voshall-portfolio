@@ -1,13 +1,34 @@
 <?php
 
+    require_once("./config/config.php");
+
     // Define error variables
     $errName = $errEmail = $errMessage = '';
 
     // Define result
     $result = '';
 
-    // check if form is submitted
+    // Check if form is submitted
     if(isset($_POST["submit"])){
+
+        // Recaptcha Verification
+        if(isset($_POST['g-recaptcha-response'])){
+
+            $response = $_POST['g-recaptcha-response'];
+
+            // Prepare URL Request
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=" . RECAPTCHA_SECRET_KEY . "&response=$response";
+
+            // Fire Request
+            $fire = file_get_contents($url);
+
+            // Decode Request
+            $data = json_decode($fire);
+
+            // Check if ReCaptcha passed
+            if($data->success == false) {
+                $result='<div><p class="alert-fail font-size-small font-roboto">ReCaptcha Failed.</p></div>';
+            }else{
 
     // assign POST variables and sanitize
     $name = filter_var($_POST["name"], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -53,3 +74,9 @@
         }
     }
     }
+
+    }else{
+        $result='<div><p class="alert-fail font-size-small font-roboto">Recaptcha Failed.</p></div>';
+    }
+
+}

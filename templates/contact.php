@@ -91,6 +91,7 @@
               required
             ></textarea>
             <?php echo "<p class='font-size-small font-roboto err'>$errMessage</p>"; ?>
+            <div class="g-recaptcha" data-sitekey="6LcF_RsmAAAAAL8goFrPdJy9C6Ot0CQXQNSQtLX0"></div>
             <button
               class="color-black-2 color-primary-bg font-roboto font-size-med"
               type="submit"
