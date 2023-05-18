@@ -24,7 +24,10 @@
     $body = "From: $name\n E-mail: $email\n Message:\n $message";
 
     // Create Headers
-    $headers = "From: $email";
+    // Had to make to 'from' be from myself due to certain email providers
+    // not allowing emails to be sent from servers other than their own.
+    $headers = 'From: '.$to."\r\n" .
+        'Reply-To: '.$email."\r\n";
 
     // Check if name has been entered
     if (!$_POST['name']) {
