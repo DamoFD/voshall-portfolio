@@ -50,3 +50,11 @@ a {
         width: 224px;
     }
 }
+
+/* Lovely Galaxy Fold */
+
+@media only screen and (max-width: 300px) {
+    .btn {
+        padding: 6px 17px;
+    }
+}

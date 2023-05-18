@@ -146,5 +146,14 @@
         background-position: right center;
     }
 }
+
+/* Lovely Galaxy Fold */
+
+@media only screen and (max-width: 300px) {
+
+    .hero-head {
+        width: 100%;
+    }
+}
       
 }

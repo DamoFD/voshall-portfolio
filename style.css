@@ -72,6 +72,12 @@ a {
     width: 224px;
   }
 }
+/* Lovely Galaxy Fold */
+@media only screen and (max-width: 300px) {
+  .btn {
+    padding: 6px 17px;
+  }
+}
 /* Typography Classes */
 /* Fonts */
 .font-sans {
@@ -300,6 +306,7 @@ a {
   /* Desktop */
   /* Tablet */
   /* Sideways Mobile */
+  /* Lovely Galaxy Fold */
 }
 #hero .hero-img {
   position: absolute;
@@ -406,6 +413,11 @@ a {
     background-position: right center;
   }
 }
+@media only screen and (max-width: 300px) {
+  #hero .hero-head {
+    width: 100%;
+  }
+}
 
 /* Method Section */
 #method {
@@ -507,6 +519,7 @@ a {
   background-position: -125px -30px;
   background-attachment: fixed;
   /* Mobile-First */
+  /* Lovely Galaxy Fold */
 }
 #skills .skills-container {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(38, 72, 63, 0.8) 100%);
@@ -555,6 +568,12 @@ a {
     margin-left: 150px;
   }
 }
+@media only screen and (max-width: 300px) {
+  #skills .grid-item img {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 /* About Section */
 #about-section {
@@ -562,6 +581,7 @@ a {
   padding: 84px 0px;
   /* Tablet */
   /* Nest-hub - Sideways tablet */
+  /* Lovely Galaxy Fold */
 }
 #about-section .grid-img {
   width: calc(100% - 32px);
@@ -646,6 +666,11 @@ a {
   }
   #about-section h2 {
     width: 500px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #about-section .about-text {
+    width: 100%;
   }
 }
 
@@ -761,6 +786,7 @@ a {
   padding-top: 85px;
   /* Tablet */
   /* Nest Hub - Sideways devices */
+  /* The Lovely Galaxy Fold */
 }
 #contact .contact-container {
   width: calc(100% - 32px);
@@ -887,6 +913,15 @@ a {
   }
   #contact form {
     order: 2;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #contact .icon-container {
+    max-width: 100%;
+  }
+  #contact .icon-text p {
+    max-width: 100%;
+    word-break: break-word;
   }
 }
 

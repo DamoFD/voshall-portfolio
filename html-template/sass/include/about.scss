@@ -111,4 +111,13 @@
             width: 500px;
         }
     }
+
+    /* Lovely Galaxy Fold */
+
+    @media only screen and (max-width: 300px) {
+
+        .about-text {
+            width: 100%;
+        }
+    }
 }
