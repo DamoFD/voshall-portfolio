@@ -1,3 +1,10 @@
+<?php
+
+  // include send-email.php
+  include('send-email.php');
+
+?>
+
 <!-- Contact Section -->
 <section id="contact" class="color-bg-2">
         <div class="contact-container">
@@ -48,7 +55,8 @@
               <img class="bounce" src="./assets/svg/linkedin.svg" />
             </div>
           </div>
-          <form method="post" action="send-email.php" class="slide-up">
+          <form method="post" action="contact.php" class="slide-up">
+            <?php echo $result; ?>
             <label for="name" class="color-primary font-poppins font-size-med"
               >Name</label
             >
@@ -59,6 +67,7 @@
               id="name"
               required
             />
+            <?php echo "<p class='font-size-small font-roboto err'>$errName</p>"; ?>
             <label for="email" class="color-primary font-poppins font-size-med"
               >Email</label
             >
@@ -69,6 +78,7 @@
               id="email"
               required
             />
+            <?php echo "<p class='font-size-small font-roboto err'>$errEmail</p>"; ?>
             <label
               for="message"
               class="color-primary font-poppins font-size-med"
@@ -80,6 +90,7 @@
               id="message"
               required
             ></textarea>
+            <?php echo "<p class='font-size-small font-roboto err'>$errMessage</p>"; ?>
             <button
               class="color-black-2 color-primary-bg font-roboto font-size-med"
               type="submit"

@@ -850,6 +850,12 @@ a {
   text-align: center;
   font-size: 16px;
 }
+#contact .err {
+  color: rgb(231, 83, 83);
+}
+#contact .alert-fail {
+  color: rgb(231, 83, 83);
+}
 @media only screen and (min-width: 1250px) {
   #contact .contact-container {
     display: grid;

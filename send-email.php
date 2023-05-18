@@ -3,6 +3,9 @@
     // Define error variables
     $errName = $errEmail = $errMessage = '';
 
+    // Define result
+    $result = '';
+
     // check if form is submitted
     if(isset($_POST["submit"])){
 
@@ -40,14 +43,10 @@
 
     // If no errors, send email
     if (!$errName && !$errEmail && !$errMessage) {
-        if (mail ($to, $subject, $body, $headers)) {
-            $result='<div class="alert-success">Thank You for reaching out! You will receive a reply shortly</div>';
-            header('Location: /');
-            exit();
+       if (mail ($to, $subject, $body, $headers)) {
+            $result='<div><p class="color-primary font-size-small font-roboto">Email Sent! You will receive a reply shortly</p></div>';
         } else {
-            $result='<div class="alert-fail">Sorry, there was an issue processing your request. Please try again later.</div>';
-            header('Location: /');
-            exit();
+            $result='<div><p class="alert-fail font-size-small font-roboto">Sorry, there was an issue processing your request. Please try again later.</p></div>';
         }
     }
     }
