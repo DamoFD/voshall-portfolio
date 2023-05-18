@@ -83,7 +83,7 @@
         font-size: 16px;
     }
 
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1250px) {
 
         .contact-container {
             display: grid;
@@ -143,11 +143,29 @@
 
     /* Tablet */
 
-    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+    @media only screen and (min-width: 700px) and (max-width: 1250px) {
 
         .contact-container {
             width: calc(100% - 300px);
             margin-left: 150px;
+        }
+    }
+
+    /* Nest Hub - Sideways devices */
+
+    @media only screen and (min-width: 900px) and (max-width: 1250px) {
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info {
+            order: 1;
+        }
+
+        form {
+            order: 2;
         }
     }
 }

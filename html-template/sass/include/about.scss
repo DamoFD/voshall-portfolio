@@ -41,7 +41,7 @@
         margin-left: 30px;
     }
 
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1250px) {
 
         padding: 84px 0px 0px 0px;
 
@@ -84,7 +84,7 @@
 
     /* Tablet */
 
-    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+    @media only screen and (min-width: 700px) and (max-width: 1250px) {
 
         .about-container {
             width: calc(100% - 300px);
@@ -97,6 +97,18 @@
 
         .icons {
             display: flex;
+        }
+    }
+
+    /* Nest-hub - Sideways tablet */
+
+    @media only screen and (min-width: 900px) and (max-width: 1250px) {
+        .about-text {
+            width: 80%;
+        }
+
+        h2 {
+            width: 500px;
         }
     }
 }

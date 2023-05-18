@@ -99,11 +99,25 @@
 
     /* Tablet */
 
-    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+    @media only screen and (min-width: 700px) and (max-width: 900px) {
 
         .method-container {
             width: calc(100% - 300px);
             margin-left: 150px;
+        }
+    }
+
+    /* Sideways Tablet - Nest-Hub */
+
+    @media only screen and (min-width: 900px) and (max-width: 1450px) {
+
+        .method-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cards {
+            margin-top: 100px;
         }
     }
 }
