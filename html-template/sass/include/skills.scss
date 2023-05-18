@@ -2,8 +2,8 @@
 
 #skills {
 
-    background-image: url(./assets/images/right-facing.jpg);
-    background-position: -225px -30px;
+    background-image: url(./assets/images/face-bg-left.webp);
+    background-position: -125px -30px;
     background-attachment: fixed;
 
     /* Mobile-First */
@@ -54,7 +54,7 @@
 
     @media only screen and (min-width: 900px) {
 
-        background-position: center center;
+        background-position: left center;
 
         .skills-container {
             padding: 150px 0px;

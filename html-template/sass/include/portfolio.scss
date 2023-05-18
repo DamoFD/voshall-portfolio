@@ -2,8 +2,8 @@
 
 #portfolio {
 
-    background-image: url(./assets/images/other-side-view.jpg);
-    background-position: 600px -30px;
+    background-image: url(./assets/images/face-bg-right.webp);
+    background-position: 500px -30px;
     background-attachment: fixed;
     z-index: -4;
 
@@ -89,7 +89,7 @@
 
     @media only screen and (min-width: 900px) {
 
-        background-position: center center;
+        background-position: right center;
 
         .grid {
             grid-template-columns: 1fr 1fr;
@@ -110,6 +110,20 @@
 
         .grid .grid-item:nth-child(4) img {
             object-position: center center;
+        }
+    }
+
+    /* Tablet */
+
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+        .grid {
+            width: calc(100% - 300px);
+            margin-left: 150px;
+        }
+
+        .grid-item {
+            height: 300px;
         }
     }
 }

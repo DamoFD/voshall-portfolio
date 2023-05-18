@@ -4,9 +4,7 @@
           <div class="slide-up img-container">
             <img
               class="grid-img"
-              width="498"
-              height="647"
-              src="./assets/images/girl drinking.png"
+              src="./assets/images/white-pic-drinking.webp"
             />
           </div>
           <div id="about" class="about-container">
